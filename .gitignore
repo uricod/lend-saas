@@ -1,0 +1,9 @@
+# local folders
+venv/
+*__pycache__*
+
+# local files
+*.csv
+*.xlsx
+*.json
+*.pyc
