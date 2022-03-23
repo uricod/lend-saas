@@ -22,4 +22,8 @@ ls.leads.get_leads(limit='20', submittedMinDate='2021-10-11',  submittedMaxDate=
 ```
 
 **Available methods:**
-#### Items Resource (monday.items)
+#### Leads Resource (ls.leads)
+- `get_leads(submittedMinDate, submittedMaxDate, offset, limit=1000)` - Get a list of leads to dataframe
+- `get_lead(lead_id)` -
+Get info about specific lead. Use LeadId from get leads query.
+
