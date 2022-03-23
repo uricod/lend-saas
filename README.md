@@ -1,4 +1,5 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://github.com/uricod/lend-saas/blob/master/LICENSE)
+<img src="https://img.shields.io/github/v/release/uricod/lend-saas">
 
 # Lend-SaaS
 A LendingSaaS Python Client Library
