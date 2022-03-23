@@ -13,8 +13,7 @@ For an overview of the LendSaaS API, [click here]( https://app.swaggerhub.com/ap
 
 `lend-saas` is very simple to use -- take a look at the below example:
 ```python
-from lend-saas import Client
-
+from lendSaaS import LendClient
 
 ls = LendClient('api_key', 'client_name')
 

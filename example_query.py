@@ -1,4 +1,4 @@
-from lendSaaS.client import LendClient
+from lendSaaS import LendClient
 from dotenv import load_dotenv
 load_dotenv()
 import os
