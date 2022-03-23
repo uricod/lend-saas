@@ -13,9 +13,13 @@ class BaseLendSaas:
         header = {'Content-type': 'application/json', 'X-API-KEY': self.api_key}
         if method == 'GET':
             result = requests.get(self.BASE_URL + url, headers=header, params=paramters)
+        elif method == 'POST':
+            result = requests.post(self.BASE_URL + url, headers=header, json=paramters)
         
         if result.status_code == 200:
             df =  json_normalize(result.json())
+            if len(df) == 0:
+                df = pd.DataFrame({'no data': ['no data returned']})
         
         elif result.status_code == 404:
             df = pd.DataFrame({'error': ['api url is not formed correctly - error 404']})
