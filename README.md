@@ -1,12 +1,8 @@
-#### Introduction
-
-1. This is for LendingSaaS API and here is link https://app.swaggerhub.com/apis/lendsaas/LendSaaSETL/1.0.0 
-
-# monday
+# Lend-SaaS
 A LendingSaaS Python Client Library
 
 
-For an overview of the Monday API, [click here](https://monday.com/developers/v2#introduction-section).
+For an overview of the LendSaaS API, [click here]( https://app.swaggerhub.com/apis/lendsaas/LendSaaSETL/1.0.0 ).
 
 
 #### Requirements
@@ -20,9 +16,9 @@ For an overview of the Monday API, [click here](https://monday.com/developers/v2
 from lend-saas import Client
 
 
-monday = MondayClient('your token')
+ls = LendClient('api_key', 'client_name')
 
-monday.items.create_item(board_id='12345678', group_id='today',  item_name='Do a thing')
+ls.leads.get_leads(limit='20', submittedMinDate='2021-10-11',  submittedMaxDate='2021-11-11')
 
 ```
 
