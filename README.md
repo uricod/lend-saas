@@ -32,9 +32,9 @@ print(df.head(2))
 - `get_lead(lead_id)` -
 Get info about specific lead. Use LeadId from get leads query.
 - `get_lead_payment_promise(lead_id)` -
-Get info about specific lead. Use LeadId from get leads query.
+Get info payment promise. Use LeadId from get leads query.
 - `get_lead_external_data(lead_id)` -
-Get info about specific lead. Use LeadId from get leads query.
+Get external data on specific lead. Use LeadId from get leads query.
 Possible Values are in DocString
 - `get_notes(lead_id, startDate, endDate, offset, limit=5000)` -
 Get notes about leads. Use LeadId from get leads query.
