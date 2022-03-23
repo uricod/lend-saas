@@ -1,4 +1,4 @@
-from src.base_lend_saas import BaseLendSaas
+from lendSaaS.src.base_lend_saas import BaseLendSaas
 
 class Transactions(BaseLendSaas):
 
