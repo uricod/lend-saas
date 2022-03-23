@@ -1,17 +1,17 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://github.com/uricod/lend-saas/blob/master/LICENSE)
 <img src="https://img.shields.io/github/v/release/uricod/lend-saas">
 
-# Lend-SaaS
+# **Lend-SaaS**
 A LendingSaaS Python Client Library
 
 
 For an overview of the LendSaaS API, [click here]( https://app.swaggerhub.com/apis/lendsaas/LendSaaSETL/1.0.0 ).
 
 
-#### Requirements
+#### **Requirements**
 - Python >= 3.6
 
-#### Getting started
+#### **Getting started**
 `pip install lend-saas`
 
 `lend-saas` is simple to use -- take a look at the below example:
@@ -58,8 +58,13 @@ Get dataframe of funding stats based on date parameters
 Get info about specific lead. Use LeadId from get leads query.
 Possible Values are in DocString
 
+#### **Tests**
+1. To run test scripts open terminal to root directory and run below command:
+```cmd
+python -m unittest discover -s lendSaaS/tests
+```
 #### TO DO
-Finish Tests
+Finish Tests with Mock API
 
 
 
