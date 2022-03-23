@@ -7,7 +7,7 @@ def main():
     api_key=os.getenv('api_key') 
     client=os.getenv('client')
     ls = LendClient(api_key=api_key, client_name=client)
-    notes = ls.transactions.get_transactions_details(datePostedMin='2021-01-01', datePostedMax='2022-01-01')
+    notes = ls.underwriting.get_offer(56)
     print(notes.iloc[0])
 
 
