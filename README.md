@@ -64,10 +64,7 @@ Get info about specific lead. Use LeadId from get leads query.
 Possible Values are in DocString
 
 #### **Tests**
-1. To run test scripts open terminal to root directory and run below command:
-```cmd
-python -m unittest discover -s lendSaaS/tests
-```
+Not working as of yet
 #### TO DO
 Finish Tests with Mock API
 
