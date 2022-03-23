@@ -14,14 +14,11 @@ For an overview of the LendSaaS API, [click here]( https://app.swaggerhub.com/ap
 #### Getting started
 `pip install lend-saas`
 
-`lend-saas` is very simple to use -- take a look at the below example:
+`lend-saas` is simple to use -- take a look at the below example:
 ```python
 from lendSaaS import LendClient
 
 ls = LendClient('api_key', 'client_name')
-
-ls.leads.get_leads(limit='20', submittedMinDate='2021-10-11',  submittedMaxDate='2021-11-11')
-
 ```
 
 **Available methods:**
