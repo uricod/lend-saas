@@ -20,7 +20,7 @@ setup(name='lend-saas',
       python_requires='>=3.6',
       install_requires=[
           'requests==2.27.1',
-          'pandas==1.4.1'
+          'pandas==1.4.0'
      ],
       classifiers=[
           "Programming Language :: Python :: 3",
