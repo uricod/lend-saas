@@ -1,8 +1,11 @@
 from lendSaaS.client import LendClient
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
-def main():
-    api_key = 'a8ea4f647e1cee2ef8823e9bdabce2e6'
-    client = 'queen'
+def main(): 
+    api_key=os.getenv('api_key') 
+    client=os.getenv('client')
     ls = LendClient(api_key=api_key, client_name=client)
     notes = ls.transactions.get_transactions_details(datePostedMin='2021-01-01', datePostedMax='2022-01-01')
     print(notes.iloc[0])
