@@ -93,7 +93,7 @@ class Leads(BaseLendSaas):
 
         return self.make_request('/ach-schedule', 'GET', paramters=parameters)
 
-    def get_underwritting_info(self, **kwargs):
+    def get_underwriting_info(self, **kwargs):
         """
         possible kwargs:
         One of These arguments must be passed:
