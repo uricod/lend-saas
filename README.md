@@ -23,6 +23,11 @@ ls = LendClient('api_key', 'client_name')
 
 **Available methods:**
 #### Leads Object (ls.leads)
+```python
+# For example:
+df = ls.leads.get_lead(lead_id)
+print(df.head(2))
+```
 - `get_leads(submittedMinDate, submittedMaxDate, offset, limit=1000)` - Get a list of leads to dataframe
 - `get_lead(lead_id)` -
 Get info about specific lead. Use LeadId from get leads query.
