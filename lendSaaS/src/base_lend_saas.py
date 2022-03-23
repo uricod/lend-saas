@@ -9,12 +9,12 @@ class BaseLendSaas:
         self.client_name = client_name
         self.BASE_URL = f'https://{self.client_name}.lendtech.io/backend/api/partners'
 
-    def make_request(self, url, method, paramters=None):
+    def make_request(self, url, method, paramters=None, body=None):
         header = {'Content-type': 'application/json', 'X-API-KEY': self.api_key}
         if method == 'GET':
             result = requests.get(self.BASE_URL + url, headers=header, params=paramters)
         elif method == 'POST':
-            result = requests.post(self.BASE_URL + url, headers=header, json=paramters)
+            result = requests.post(self.BASE_URL + url, headers=header, json=body)
         
         if result.status_code == 200:
             df =  json_normalize(result.json())
