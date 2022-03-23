@@ -1,6 +1,9 @@
 # local folders
 venv/
 *__pycache__*
+build/
+dist/
+lend_saas.egg-info/
 
 # local files
 *.csv
