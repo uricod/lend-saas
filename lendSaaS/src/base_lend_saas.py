@@ -20,6 +20,9 @@ class BaseLendSaas:
             df =  json_normalize(result.json())
             if len(df) == 0:
                 df = pd.DataFrame({'no data': ['no data returned']})
+
+        elif result.status_code == 401:
+            df = pd.DataFrame({'error': ['unauthorized 401 - invalid api key']})
         
         elif result.status_code == 404:
             df = pd.DataFrame({'error': ['api url is not formed correctly - error 404']})
