@@ -3,7 +3,7 @@
 
 # **Lend-SaaS**
 A Non-Offical LendingSaaS Python Client Library.
-[LendSaas Webiste](https://www.lendsaas.com/)
+[LendSaas Website](https://www.lendsaas.com/)
 
 
 For an overview of the LendSaaS API, [click here]( https://app.swaggerhub.com/apis/lendsaas/LendSaaSETL/1.0.0 ).
